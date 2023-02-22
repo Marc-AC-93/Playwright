@@ -1,0 +1,24 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test_chrome": "npx playwright test --config=src/local.config.js --project=chromium",
+    "test_firefox": "npx playwright test --config=src/local.config.js --project=firefox",
+    "test_webkit": "npx playwright test --config=src/local.config.js --project=webkit",
+    "test": "npx playwright test --config=src/local.config.js",
+    "debug": "npx playwright test --headed --config=src/local.config.js --project=chromium",
+    "example": "npx playwright test --config=src/example.config.js",
+    "report": "npx playwright show-report "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.30.0"
+  },
+  "dependencies": {
+    "prettier": "^2.8.4"
+  }
+}
